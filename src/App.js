@@ -44,10 +44,11 @@ import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
 function App() {
+  // Id like the about section to be above the commercial/changed to projects section when page loads, maybe eve not have projects on this page
   const [categories] = useState([ 
     {
       name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+      description: 'Some of our completed projects',
     },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'food', description: 'Delicious delicacies' },

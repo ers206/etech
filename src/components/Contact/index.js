@@ -32,7 +32,7 @@ function ContactForm() {
       }
     }
   };
-
+// want to change this maybe just have an email and phone link 
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
@@ -54,10 +54,34 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" mailto="mailto:owner@etechinnovations.com" type="submit">Submit</button>
       </form>
     </section>
   );
 }
 
 export default ContactForm;
+
+
+// added mailto section above didnt work********************
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// const ButtonMailto = ({ mailto, label }) => {
+//     return (
+//         <Link
+//             to='#'
+//             onClick={(e) => {
+//                 window.location.href = mailto;
+//                 e.preventDefault();
+//             }}
+//         >
+//             {label}
+//         </Link>
+//     );
+// };
+
+// export default ButtonMailto;
+
+{/* <ButtonMailto label="Write me an E-Mail" mailto="mailto:no-reply@example.com" /> */}

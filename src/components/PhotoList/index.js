@@ -36,7 +36,7 @@ const PhotoList = ({ category }) => {
       name: 'Cafe interior',
       category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'testing to make sure this works'
     },
     {
       name: 'Cat green eyes',

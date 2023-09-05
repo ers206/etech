@@ -22,23 +22,18 @@ function Nav(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+          {/* need to add log  */}
+          <span role="img" aria-label="camera"> </span> E TECHNOLLOGIES LLC
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
             <a data-testid="about" href="#about">
-              About me
+              About Us
             </a>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => {
-                handleClick()
-            }}>
-              Contact
-            </span>
-          </li>
+
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -55,6 +50,13 @@ function Nav(props) {
               </span>
             </li>
           ))}
+                    <li className={"mx-2"}>
+            <span onClick={() => {
+                handleClick()
+            }}>
+              Contact
+            </span>
+          </li>  
         </ul>
       </nav>
     </header>
