@@ -14,7 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* this was #282c34 tried to make background white. did not workk  */
+  background-color: #f3f4f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +37,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* #282c34  */

@@ -49,8 +49,10 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
+  /* below is background of app */
+  background: var(--light);
+  /* below is color of font */
+  color: var(--dark);
   font-family: 'Poiret One', cursive;
 
 }
@@ -69,6 +71,11 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  text-shadow: 3px 3px #b4aeae;
+}
+
+#title1{
+  text-shadow: 3px 3px #b4aeae;
 }
 
 h2 {
@@ -107,11 +114,13 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  /* changing background to white need to change font color to match  */
+  background: var(--light);
 }
 
 header a {
-  color: var(--light);
+  /* this is only for etech and about us not the rest of the header  */
+  color: var(--dark);
 }
 
 button {
@@ -269,7 +278,7 @@ textarea {
 }
 
 .modalContainer {
-	background: var(--darker);
+	background: var(--light);
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -308,3 +317,12 @@ a {
 .navActive {
   color: var(--secondary);
 }
+/* its doesnt just use the logo as the size there is a box around it its too low */
+#eLogo{
+  height:80px;
+  width: auto;
+  display: block; 
+}
+/* #link {
+  text-shadow: 2px 2px #ff0000;
+} */

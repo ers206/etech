@@ -8,6 +8,7 @@ const PhotoList = ({ category }) => {
 //   where does this go from 20.5.4 just over halfway down page doesnt say where it goes
 //   {isModalOpen && <Modal currentPhoto={currentPhoto} />}
   const [photos] = useState([
+    // all names and categories will need to be changed. Not sure if ill need description
     {
       name: 'Grocery aisle',
       category: 'commercial',
@@ -33,7 +34,8 @@ const PhotoList = ({ category }) => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
-      name: 'Cafe interior',
+      // changed as a test added pic
+      name: 'Sunset',
       category: 'commercial',
       description:
         'testing to make sure this works'

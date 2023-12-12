@@ -17,15 +17,21 @@ function Nav(props) {
     setContactSelected(!contactSelected)
     return item;
   };
-
+// i dont need all the categories on top. I need about us, recent projects(with links), gallery of images
+// why only about us, contact and tiltle on this page
   return (
     <header className="flex-row px-1">
+      {/* need ti get logo to be smaller and next to Etech font when I changed the favicon logo this stopped working moved it to public still not working*/}
+      <img id="eLogo" src="etechLogo.png"
+           alt=""></img>
       <h2>
-        <a data-testid="link" href="/">
-          {/* need to add log  */}
-          <span role="img" aria-label="camera"> </span> E TECHNOLLOGIES LLC
+        <a data-testid="link" href="/" id="title1">
+          {/* need to add logo  */}
+          {/* <span ></span>  */}
+          <span  role="img" aria-label="camera"> </span>E TECHNOLOGIES LLC
         </a>
       </h2>
+      
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
@@ -59,6 +65,7 @@ function Nav(props) {
           </li>  
         </ul>
       </nav>
+      
     </header>
   );
 }
