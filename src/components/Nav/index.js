@@ -60,7 +60,7 @@ function Nav(props) {
             <span onClick={() => {
                 handleClick()
             }}>
-              Contact
+                Contact Us
             </span>
           </li>  
         </ul>

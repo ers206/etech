@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
 
+// not sure I want a form here. Maybe a phone number and email a link to FB page
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
@@ -35,6 +36,7 @@ function ContactForm() {
 // want to change this maybe just have an email and phone link 
   return (
     <section>
+      {/* this is on the header I probably dont need this */}
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>

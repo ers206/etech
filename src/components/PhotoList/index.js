@@ -8,35 +8,36 @@ const PhotoList = ({ category }) => {
 //   where does this go from 20.5.4 just over halfway down page doesnt say where it goes
 //   {isModalOpen && <Modal currentPhoto={currentPhoto} />}
   const [photos] = useState([
-    // all names and categories will need to be changed. Not sure if ill need description
+    // all names and categories will need to be changed. Not sure if ill need description this is where I need to 
+    // match the category to the image, its by numbers. the images are numbered like an array
     {
       name: 'Grocery aisle',
-      category: 'commercial',
+      category: 'Projects',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Grocery booth',
-      category: 'commercial',
+      category: 'Projects',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Building exterior',
-      category: 'commercial',
+      category: 'Projects',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Restaurant table',
-      category: 'commercial',
+      category: 'Projects',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
-      // changed as a test added pic
+      // changed as a test added pic/ works by number to an array
       name: 'Sunset',
-      category: 'commercial',
+      category: 'Projects',
       description:
         'testing to make sure this works'
     },
