@@ -41,21 +41,22 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
+// not sure I want contact form
 import ContactForm from './components/Contact'; 
 
 function App() {
   // Id like the about section to be above the commercial/changed to projects section when page loads, maybe eve not have projects on this page
   const [categories] = useState([ 
     {
-      // this will be projects
-      name: 'commercial',
+      // this will be projects*******************change to projects and change in photolist index.js 
+      name: 'projects',
       description: 'Some of our completed projects',
     },
     // this will be pictures/ picture gallery
-    { name: 'portraits', description: 'Portraits of people in my life' },
+    { name: 'photos', description: 'Portraits of people in my life' },
     // not sure I need these below or change them to something *******ads/ show ads that I have made on FB or Google
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+    { name: 'ads', description: 'Delicious delicacies' },
+    // { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }, 
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -63,7 +64,8 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div>'
+    <div>
+      {/* this is where ' was in upper left corner of page */}
       {/* I dont need all the current categories in nav. I want a photo gallery, a projects section, and maybe a section showing adds Ive made */}
       <Nav
         categories={categories}
@@ -79,7 +81,8 @@ function App() {
             <About></About>
           </>
         ) : (
-            <ContactForm></ContactForm>
+          // ******** not sure I want contactform
+            <ContactForm></ContactForm> 
           )}
 
       </main>
